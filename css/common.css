@@ -1,0 +1,532 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%; /* -> 10px; */
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #F4F5F7;
+}
+
+header,
+h2 {
+  font-family: serif;
+}
+
+h1 .normal-h1 {
+  display: none;
+  font-size: 2.4rem;
+}
+h1 .compact-h1 {
+  padding-top: bottom;
+  font-size: 2rem;
+  line-height: 23.3px;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+
+main .about,
+main .skill .skill-box,
+main .develop .develop-box {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+main .skill h3 {
+  text-align: center;
+  background-color:#E7EAF6;
+  padding:20px 0;
+}
+main .develop h3 {
+  font-size: 2rem;
+}
+nav {
+  font-size: 2rem;
+}
+p {
+  font-size: 2rem;
+}
+main .about p {
+  font-size: 1.6rem;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  float: left;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #041C32;
+  color: #F4F5F7;
+  line-height: 70px;
+  z-index: 2;
+}
+
+header h1 {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header nav.normal-menu ul {
+  display: none;
+}
+
+header nav.normal-menu li {
+  float: left;
+  margin-right: 20px;
+}
+
+header nav.normal-menu li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 7px;
+}
+
+header nav.normal-menu li a.invert {
+  background-color: #F05454;
+}
+
+.top {
+  background: url(../assets/img/main/top.png) no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.top h2 {
+  color: #F4F5F7;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+h3 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+main .about {
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+
+main .about img {
+  width: 30%;
+  padding: 40px 0;
+  margin-left: 35%;
+}
+
+main .about p {
+  width: 70%;
+  margin-left: 15%;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+main .skill-box,
+main .develop-box {
+  display: grid;
+}
+
+main .skill,
+main .develop,
+footer {
+  text-align: center;
+}
+
+main .skill {
+  background-color: #041C32;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+main .skill h2 {
+  color: #F4F5F7;
+}
+
+main .skill .skill-box {
+  width: 80%;
+  height: 500px;
+  border-radius: 15px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: #F4F5F7;
+}
+main .skill-box div {
+  margin: auto auto;
+}
+main .skill-box img {
+  height: 70%;
+  width: 70%;
+}
+
+main .develop {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+main .develop-category {
+  margin-bottom: 20px;
+}
+
+main .develop-category .button-category {
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px 5px 1px 5px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  color: #F4F5F7;
+  background-color: #787A91;
+  border-color: #787A91;
+  border-bottom: 2px solid #212529;
+}
+
+main .develop-category .target-category {
+  margin-top: 2px;
+  background-color: #F05454;
+  border-color: #F05454;
+  border-bottom: 2px solid #C24444;
+}
+
+main .develop-category .button-category-reset {
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  color: #212529;
+  border-radius: 15px;
+  color: #F4F5F7;
+  background-color: #212529;
+  border-color: #212529;
+}
+
+main .develop-box {
+  width: 80%;
+  height: 500px;
+  border-radius: 15px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  background: #F4F5F7;
+  box-shadow: inset 5px 5px 39px #CFCFCF,
+  inset -5px -5px 39px #F4F5F7;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-imgframe {
+  padding-top: 56.25%;
+  background: url(https://placehold.jp/640x360.png) no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.card-titletext {
+  width: 100%;
+  margin: 10px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.card-overviewtext {
+  position: absolute;
+  width: 100%;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.card-overviewtext span {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 3px 10px 4px 10px;
+  border-radius: 10px;
+  color: #F4F5F7;
+  background: #F37F7F;
+  line-height: 1.5;
+}
+
+.card-imgframe.e-archive {
+  background: url(../assets/img/develop/e-archive.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-imgframe.daycare-e-learning {
+  background: url(../assets/img/develop/daycare-e-learning.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-imgframe.stationery-form {
+  background: url(../assets/img/develop/stationery-form.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-imgframe.game-dlc {
+  background: url(../assets/img/develop/game-dlc.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-imgframe.sample-develop {
+  background: url(../assets/img/develop/sample-develop.jpg) no-repeat center;
+  background-size: cover;
+}
+.card-overviewtext span.planning:after {
+  content: '企画';
+}
+.card-overviewtext span.requirement_definition:after {
+  content: '要件定義';
+}
+.card-overviewtext span.basic_design:after {
+  content: '基本設計';
+}
+.card-overviewtext span.specific_design:after {
+  content: '詳細設計';
+}
+.card-overviewtext span.implement:after {
+  content: '実装';
+}
+.card-overviewtext span.test:after {
+  content: 'テスト';
+}
+.card-overviewtext span.personal:after {
+  content: '個人開発';
+}
+
+footer {
+  width: 100%;
+  color: #F4F5F7;
+}
+
+footer .contact {
+  height: 250px;
+  background-color: #041C32;
+}
+
+footer .contact h2 {
+  padding-top: 30px;
+}
+
+footer li {
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #F4F5F7;
+  transition: all 0.3s ease;
+}
+
+footer li:hover {
+  background-color: lightgray;
+}
+
+footer .contact-icon {
+  color: #F05454;
+  display: block;
+}
+
+footer .copyright {
+  font-family: serif;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #000000;
+}
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  text-align: center;
+}
+.hamburger span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  left: 6px;
+  background: #F4F5F7;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #F4F5F7;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #F4F5F7;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 70px;
+  right: 0;
+  color: #F4F5F7;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 180px;
+  display: none;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height:70px;
+  transition: 0.4s all;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #DDD;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  height: 100%;
+  color: #F4F5F7;
+  text-decoration: none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  display: initial;
+}
+
+/*モーダル*/
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0,0,0,50%);
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+  box-sizing: border-box;
+}
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active {
+	opacity: 1;
+	visibility: visible;
+}
+/*モーダル枠の指定*/
+.modal-body {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*モーダルを閉じるボタンの指定*/
+.modal-close {
+	position: absolute;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	top: -40px;
+	right: -60px;
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
+	color: #F4F5F7;
+	cursor: pointer;
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content {
+	background: #F4F5F7;
+	text-align: left;
+  width: 100%;
+	height: 100%;
+  border-radius: 15px;
+}
+
+.modal-content iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.js-fadein {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s all;
+}
+.is-fadein {
+  opacity: 1;
+  visibility: visible;
+}
