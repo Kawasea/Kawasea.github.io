@@ -221,8 +221,10 @@ main .develop-category .button-category-reset {
   vertical-align: middle;
   letter-spacing: 1px;
   color: #212529;
-  background-color: #F4F5F7;
   border-radius: 15px;
+  background-color: #F4F5F7;
+  border-color: #787A91;
+  border-bottom: 2px solid #212529;
 }
 
 main .develop-box {
