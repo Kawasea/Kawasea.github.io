@@ -138,6 +138,9 @@ main .about p {
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
+main .about p a {
+  color: #3E54AC;
+}
 
 main .skill-box,
 main .develop-box {

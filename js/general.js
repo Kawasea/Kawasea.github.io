@@ -1,4 +1,20 @@
 $(function() {
+    // コピーライトの年数
+    const now = new Date();
+    const year = now.getFullYear();
+    $('.copyright p').append(year);
+
+    // 年齢（現在と生年月日でyyyymmddの数値差分をとりyyyyを抽出）
+    const birthDate = new Date('1991/9/8');
+    const birthNumber = birthDate.getFullYear() * 10000 
+        + (birthDate.getMonth() + 1 ) * 100 
+        + birthDate.getDate();
+    const nowNumber = now.getFullYear() * 10000 
+        + (now.getMonth() + 1 ) * 100 
+        + now.getDate();
+    const age = Math.floor( (nowNumber - birthNumber) / 10000 );
+    $('.about p span.age').append(age + '歳');
+
     // ハンバーガー
     $('.hamburger').click(function() {
         $(this).toggleClass('active');
@@ -39,11 +55,6 @@ $(function() {
             modalClose();
 		}
 	});
-    
-    // コピーライトの年数
-    const now = new Date();
-    const year = now.getFullYear();
-    $('.copyright p').append(year);
     
     // スクロール時
     $(window).scroll(function () {
