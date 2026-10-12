@@ -1,0 +1,43 @@
+{
+  "description": "Develop cards: option A — translucent blue/violet glass illustrations",
+  "generator": "OpenAI built-in image generation",
+  "stylePrompt": "Create ONE final 16:9 landscape illustration for a project card in a Japanese software engineer portfolio. Use ONLY panel A (LEFT) of the reference image as the visual style reference; ignore panels B/C completely. Deliver a single edge-to-edge image, NOT a comparison board. No letters, labels, words, numbers, logos, watermarks, borders, or caption. Premium precise isometric 3D, frosted and clear ice-blue glass objects, satin-white accent pieces, subtle periwinkle #667eea and muted violet #764ba2 glass edges, very pale cool-blue studio background, soft directional lighting, elegant controlled reflections and soft cast shadows. Same series art direction as panel A. The central subject should occupy about 70% of the frame with generous safe margins so nothing is clipped when used as a small 16:9 card. Three-quarter isometric view, readable large forms, strong silhouette, only 2–4 relevant objects. Technically sophisticated, calm, beautiful; no people, no cartoon faces, no dashboard UI, no excess particles, no neon, no rainbow iridescence, no dark background. Objects are symbolic conceptual illustrations, not purported actual system screenshots. ",
+  "assets": [
+    {
+      "file": "call-center-aws.webp",
+      "subjectPrompt": "Cloud infrastructure migration: two distinct short glass server stacks on a thin transparent platform, one floating satin-white cloud above, one sweeping arched transfer path connecting the stacks through the cloud, with three blue-violet data blocks traveling along it. Clear left-to-right transfer. Match reference A composition closely."
+    },
+    {
+      "file": "call-center-db-clean.webp",
+      "subjectPrompt": "Database cleanup: one large beautiful translucent glass database cylinder with three stacked disk tiers; beside it, a broad transparent filtering funnel sorts a small cluster of uneven glass data cubes into a short orderly row of clean matching cubes. A small satin-white checkmark denotes successful cleanup. Database silhouette is the dominant object, not a cloud or headset."
+    },
+    {
+      "file": "call-center.webp",
+      "subjectPrompt": "Call-center application improvements: a single elegant over-ear headset with a microphone boom sculpted in frosted ice-blue glass, two overlapping transparent speech bubbles with just three simple dots each, and a thin structured glass base. Headset is the large dominant silhouette. No people or text or cloud."
+    },
+    {
+      "file": "e-archive2.webp",
+      "subjectPrompt": "Electronic document management extension: an upright transparent glass folder containing three satin-white document sheets with minimal blue geometric horizontal marks, paired with one large glass magnifying lens examining a sheet and a small blue-violet checkmark. Readable document-search concept, restrained composition. No readable text."
+    },
+    {
+      "file": "welfare-media.webp",
+      "subjectPrompt": "Welfare information portal and search: a large translucent glass browser-like rectangular panel with NO UI text, containing just a simple violet heart symbol and three geometric content tiles; a glass magnifying lens rests beside it, with a small satin-white linking ring connecting the objects. Communicate accessible welfare information discovery, professional and warm, no medical cross, no hospital imagery, no people."
+    },
+    {
+      "file": "industry-certification.webp",
+      "subjectPrompt": "Professional qualification and examination management: a satin-white upright certificate sheet held in a clear ice-blue glass frame, a distinctive translucent blue-violet rosette seal at its lower corner, with a small checklist slab of three geometric lines and checkmarks beside it. Elegant professional credential motif, NO readable letters or numbers."
+    },
+    {
+      "file": "e-archive.webp",
+      "subjectPrompt": "Electronic records and document archiving: an elegant translucent ice-blue glass archive box with its lid slightly lifted, three orderly satin-white document sheets emerging vertically, a small sculpted blue-violet lock on the front indicating protected storage. Dominant archive box, compact balanced arrangement, no readable text, no magnifying glass."
+    },
+    {
+      "file": "commercial-deal.webp",
+      "subjectPrompt": "Television advertising slot sales management: a large translucent glass scheduling board with a clean 4 by 3 grid and three blue-violet blocks occupying selected slots, paired with a small satin-white video play triangle inset in a clear glass screen. Communicate scheduling and video advertising inventory, not film production; no clapperboard, no camera, no text, no numbers."
+    },
+    {
+      "file": "daycare-e-learning.webp",
+      "subjectPrompt": "Online learning for childcare professionals: a frosted glass tablet in landscape orientation displaying one simple blue-violet play triangle, leaning against a satin-white open book; two small translucent geometric learning blocks beside it. Refined education-and-video motif for professional learning, not childish, no letters, no toy faces, no people."
+    }
+  ]
+}
